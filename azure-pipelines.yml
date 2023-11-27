@@ -15,5 +15,6 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    az deployment group create --resource-group DevOps --template-file quickstarts/microsoft.documentdb/cosmosdb-create-account/main.bicep --parameter-file quickstarts/microsoft.documentdb/cosmosdb-create-account/azuredeploy.parameters.json
+    echo Completed Deployment throug DevOps.
   displayName: 'Run a multi-line script'
